@@ -1,0 +1,39 @@
+.titulo {
+  padding-top: 5%;
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.tabela {
+  // padding-top: 0%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.1);
+
+  &_cabecalho {
+    color: var(--primary);
+
+    &_conteudo {
+      padding: 10px;
+      border-bottom: 2px solid rgb(44, 5, 216);
+    }
+  }
+  &_linha {
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    &:last-child {
+      .tabela__conteudo {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__contedo {
+    padding: 10px;
+    border-bottom: 1px solid var(--cinza-claro);
+  }
+}

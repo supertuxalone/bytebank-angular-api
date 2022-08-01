@@ -1,0 +1,36 @@
+compilar em D:\Users\z0167207\Workspaces\bytebank
+  # ng serve
+
+ cd D:\Users\z0167207\Workspaces\bytebank\dados
+ 
+ 1 - instalar meu JSON server. Então npm install -g json-server.
+ 2 - diretório principal um arquivo e vou fazer o seguinte. Vou nomear primeiro um diretório, vai chamar dados/DB.json.
+ 3 - vou copiá-lo e vou colar aqui dentro
+ {
+  "transferencias": [
+    {
+      "id": "1",
+      "valor": 35,
+      "destino": "1212-1",
+      "data": "2020-11-04T16:30:10.710Z"
+    },
+    {
+      "id": "2",
+      "valor": 40,
+      "destino": "1213-1",
+      "data": "2020-11-04T21:24:10.710Z"
+    },
+    {
+      "id": "3",
+      "valor": 12.5,
+      "destino": "1214-1",
+      "data": "2020-11-05T21:14:10.710Z"
+    }
+  ]
+}
+
+4 - startar json-server --watch db.json
+5 - transformar um JSON para Csharp, tem JSON to Csharp, inclusive tem o JSON to ts
+  http://json2ts.com/
+6 -  criar um arquivo, vai ser models, que é o diretório que vou ter ele, vou ter transferencia.model.ts
+7 -  colar os dados dessa interface. Vai ser export, vou exportá-lo, então já tenho meu modelo.
